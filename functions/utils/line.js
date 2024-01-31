@@ -5,16 +5,6 @@ const LINE_HEADER = {
   Authorization: `Bearer ${process.env.CHANNEL_ACCESS_TOKEN}`
 };
 
-const getImageBinary = async (messageId) => {
-  const originalImage = await axios({
-    method: "get",
-    headers: LINE_HEADER,
-    url: `https://api-data.line.me/v2/bot/message/${messageId}/content`,
-    responseType: "arraybuffer"
-  })
-  return originalImage.data;
-}
-
 const reply = (token, payload) => {
   return axios({
     method: "post",
@@ -24,4 +14,4 @@ const reply = (token, payload) => {
   });
 };
 
-module.exports = { getImageBinary, reply };
+module.exports = { reply };

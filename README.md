@@ -1,5 +1,5 @@
-# LINE Chatbot x Gemini API
-A repo of building Gen AI Chatbot with Gemini by using LINE Messaging API and Cloud Functions for Firebase 2nd Gen
+# Researcher Assistant
+A repo of building Perplexity AI 'pplx-7b-online' by using LINE Messaging API and Cloud Functions for Firebase. The bot will help you search for latest researches in your interest area.
 
 ## Prerequisites
 * [Node.js v18](https://nodejs.org) or higher
@@ -9,11 +9,12 @@ A repo of building Gen AI Chatbot with Gemini by using LINE Messaging API and Cl
 ## Cloud Functions for Firebase
 * Copy credentials and set them in Environment variable (.env)
 ```
+Create your .env file in functions folder and add
 CHANNEL_ACCESS_TOKEN=CHANNEL-ACCESS-TOKEN-OF-LINE-MESSAGING-API
-API_KEY=API-KEY-FROM-MAKERSUITE
+PERPLEXITY_API_KEY=API-KEY-FROM-PERPLEXITY
 ```
 
 ## Documentation
 * [LINE Messaging API](https://developers.line.biz/en/docs/messaging-api/overview)
 * [Cloud Functions for Firebase](https://firebase.google.com/docs/functions/get-started)
-* [Gemini API](https://ai.google.dev/docs/gemini_api_overview)
+* [Perplexity API](https://docs.perplexity.ai/docs/getting-started)
