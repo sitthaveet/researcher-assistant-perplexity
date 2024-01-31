@@ -7,9 +7,8 @@ A repo of building Perplexity AI 'pplx-7b-online' by using LINE Messaging API an
 * Create a Firebase project using the [Firebase Console](https://console.firebase.google.com) and select <b>Blaze plan</b>
 
 ## Cloud Functions for Firebase
-* Copy credentials and set them in Environment variable (.env)
+* Copy credentials and set them in your Environment variable (.env)
 ```
-Create your .env file in functions folder and add
 CHANNEL_ACCESS_TOKEN=CHANNEL-ACCESS-TOKEN-OF-LINE-MESSAGING-API
 PERPLEXITY_API_KEY=API-KEY-FROM-PERPLEXITY
 ```
