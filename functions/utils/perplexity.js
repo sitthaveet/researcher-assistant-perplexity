@@ -32,13 +32,11 @@ const research = async (prompt) => {
   try {
     const response = await fetch('https://api.perplexity.ai/chat/completions', options);
     const data = await response.json();
-    console.log(data.choices[0].message.content);
+    // console.log(data.choices[0].message.content);
     return data.choices[0].message.content;
   } catch (err) {
     console.error(err);
   }
 };
-
-research('CRISPR');
 
 module.exports = { research };
